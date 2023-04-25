@@ -1,0 +1,408 @@
+title: "Alex Munene (@enenumxela)"
+baseURL: "https://blog.alexmunene.com/"
+languageCode: "en-us"
+
+theme: hugo-profile
+
+outputs:
+    home:
+        - "HTML"
+        - "RSS"
+        - "JSON"
+    page:
+        - "HTML"
+        - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+Menus:
+    main:
+        - 
+            identifier: blog
+            name: Blog
+            title: Blog posts
+            url: /blogs
+            weight: 1
+        # - 
+        #     identifier: gallery
+        #     name: Gallery
+        #     title: Blog posts
+        #     url: /gallery
+        #     weight: 2
+        #Dropdown menu
+        # - identifier: dropdown
+        #   title: Example dropdown menu
+        #   name: Dropdown
+        #   weight: 3
+        # - identifier: dropdown1
+        #   title: example dropdown 1
+        #   name: example 1
+        #   url: /#
+        #   parent: dropdown
+        #   weight: 1
+        # - identifier: dropdown2
+        #   title: example dropdown 2
+        #   name: example 2
+        #   url: /#
+        #   parent: dropdown
+        #   weight: 2
+
+params:
+    title: "Alex Munene (@enenumxela)"
+    description: "Alex Munene (@enenumxela)"
+    # staticPath: ""  # The path to serve the static files from
+    favicon: "/fav.png"
+
+    # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+    # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+    # Note the lack of "" in true, it should be of boolean type.
+    useBootstrapCDN: false
+
+    # If you want to load dynamically responsive images from Cloudinary
+    # This requires your images to be uploaded + hosted on Cloudinary
+    # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+    # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+    # Whether the fade animations on the home page will be enabled
+    animate: true
+
+    theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+    font:
+        fontSize: 1rem # default: 1rem
+        fontWeight: 400 # default: 400
+        lineHeight: 1.5 # default: 1.5
+        textAlign: left # default: left
+
+    # color preference
+    # color:
+    #   textColor:
+    #   secondaryTextColor:
+    #   backgroundColor:
+    #   secondaryBackgroundColor:
+    #   primaryColor:
+    #   secondaryColor:
+
+    #   darkmode:
+    #     textColor:
+    #     secondaryTextColor:
+    #     backgroundColor:
+    #     secondaryBackgroundColor:
+    #     primaryColor:
+    #     secondaryColor:
+
+    # If you want to customize the menu, you can change it here
+    navbar:
+        align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+        # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+        showBrandLogo: false # Show brand logo in nav bar | default is true
+        # brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+        disableSearch: true
+        # searchPlaceholder: "Search"
+        menus:
+            disableAbout: false
+            disableExperience: false
+            disableEducation: false
+            disableProjects: false
+            disableAchievements: false
+            disableContact: false
+
+    # Hero
+    hero:
+        enable: true
+        intro: "What's poppin! I'm"
+        title: "Alex Munene,"
+        # subtitle: "I build things for the web"
+        subtitle: "Security Engineer, Developer & Hacker."
+        # content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+        content: "I build stuff, break stuff and build stuff that break stuff."
+        # image: /images/hero.svg
+        bottomImage:
+            enable: true
+        # roundImage: true # Make hero image circular | default false
+        button:
+            enable: false
+            name: "Resume"
+            url: "#"
+            download: true
+            newPage: false
+        socialLinks:
+            fontAwesomeIcons:
+                - 
+                    icon: fab fa-github
+                    url: https://github.com/enenumxela
+                - 
+                    icon: fab fa-linkedin-in
+                    url: https://linkedin.com/in/enenumxela
+                - 
+                    icon: fab fa-twitter
+                    url: https://twitter.com/enenumxela
+            # customIcons:
+            #     - 
+            #         icon: /fav.png
+            #         url: "https://example.com"
+
+  # About
+    about:
+        enable: true
+        title: "About Me"
+        # image: "/images/me.png"
+        content: |-
+            I build stuff, break stuff and build stuff that break stuff. With 3+ years of experience, I'm passionate about helping organizations with their cyber security needs in this ever-changing threat landscape.
+
+            Globally, I have conducted in-depth application and cloud security research, identifying, exploiting, and reporting vulnerabilities to 10+ organizations. Having been recognized, rewarded or/and acknowledged by top companies such as Oracle, Yahoo and Adobe, among others, for reporting and helping remediate security issues on their assets.
+
+            Locally, I have conducted security assessments ranging from compliance audits to technical assessment, such as red teaming, vulnerability assessment and penetration testing, across micro-finance institutions, banks and manufacturing companies in the region (Kenya, Uganda, Tanzania & Rwanda).
+
+            I founded Hueristiq, an organization dedicated to developing innovative tools that help security practitioners automate, accelerate, and scale security assessments. Through our work, we strive to make security assessments more efficient and effective, while minimizing the risk of human error.
+        skills:
+            enable: false
+            title: "Here are a few technologies I've been working with recently:"
+            items:
+                - "HTML"
+                - "CSS"
+                - "JavaScript"
+                - "React"
+                - "Node"
+                - "Express"
+
+    # Experience
+    experience:
+        enable: true
+        # title: "Custom Name"
+        items:
+            - 
+                job: "Security Analyst"
+                company: "Yelbridges"
+                companyUrl: "https://yelbridges.co.ke/"
+                date: "Feb 2023 - Present"
+                # featuredLink:
+                #     enable: true
+                #     name: "View the project"
+                # url: "https://example.com"
+                content: |
+                    - Conducting security assessments ranging from compliance audits to technical assessment such as code reviews, vulnerability assessments and penetration testing across Kenya and Europe
+                    - Designed, built and automated red team infrastructure using Terraform for infrastructure provisioning and Ansible for configuration management, reducing manual work by 70%
+
+            -
+                job: "Security Enginner, Developer & Hacker"
+                company: "Hueristiq"
+                companyUrl: "http://hueristiq.com"
+                date: "Apr 2021 - Present"
+                # featuredLink:
+                #     enable: true
+                #     url: "https://example.com"
+                # info:
+                #     enable: true
+                #     content: I worked as a software developer for more than one year in Amazon.
+                content: |
+                    Founded Heuristiq, an organization building security assessments’ tooling:
+                    - Leading a team of 3 engineers in all aspects of the software development life cycle, from
+                    conceptualization through implementation to deployment and maintenance of security tooling
+                    - Built 10+ tools, using Go and Python, to automate, accelerate and scale security assessments, automating 50% and improving efficiency by 40%. https://github.com/hueristiq
+                    - Implemented and maintained CI/CD pipelines, using Github Actions, for code deployment
+                    eliminating 80% of manual work and escalation of efficiency
+            -
+                job: "Security Researcher (Bug Bounty Hunter)"
+                company: "Bug Bounty Platforms"
+                # companyUrl: "https://example.com"
+                date: "Jan 2020 - Present"
+                # info:
+                #     enable: false
+                # featuredLink:
+                #     enable: true
+                #     url: "https://example.com"
+                content: |
+                    I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+                    - Lead backend developer for a product.
+                    - Created a frontend design for a product.
+            -
+                job: "Security Auditor"
+                company: "Salaam"
+                companyUrl: "https://www.salaam.ke/"
+                date: "Jan 2022 - Sep 2022"
+                # featuredLink:
+                #     enable: true
+                #     url: "https://example.com"
+                content: |
+                    - Conducted vulnerability assessment and penetration testing against 10+ clients', across SACCOs, banks and manufacturing companies, on web and mobile applications, and infrastructure domains
+                    - Collaborated with the SOC team to write, deploy and tune detections based on security assessments activities and research work against common data sets (Windows Event Logs)
+                    - Reviewed clients' information security policies and procedures for completeness and alignment to regulatory, best practices and generally accepted standards (ISO, NIST, PCI), ensuring a consistent security posture across the organizations'
+
+    # Education
+    education:
+        enable: false
+        # title: "Custom Name"
+        index: false
+        items:
+            - 
+                title: "Master of Business Administration"
+                school:
+                    name: "University of California, Berkeley"
+                    url: "https://example.org"
+                date: "2013 - 2015"
+                GPA: "3.8 out of 5.0"
+                content: |-
+                    Extracurricular Activities
+                        - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+            - 
+                title: "Bachelor of Science in Computer Science"
+                school:
+                    name: "Massachusetts Institute of Technology"
+                    url: "https://example.org"
+                date: "2009 - 2013"
+                GPA: "3.9 out of 5.0"
+                content: |-
+                    I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+                    - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+                    - Face mask detection using a single convolutional neural network.
+                    Extracurricular Activities
+                        - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+                featuredLink:
+                    enable: true
+                    name: "My academic record"
+                    url: "https://example.com"
+            - 
+                title: "High School"
+                school:
+                    name: "Thomas Jefferson High School for Science and Technology."
+                    url: "https://example.org"
+                GPA: "4.2 out of 5.0"
+                featuredLink:
+                    enable: true
+                    url: "https://example.com"
+
+    # Achievements
+    achievements:
+        enable: true
+        # title: "Custom Name"
+        items:
+            - 
+                title: Yahoo Bug Bounty 2021 Challege Coin
+                content: Received the bug bounty hacker 2021 challenge coin from The Paranoids - information security team at Yahoo - for participating with and supporting the Yahoo Bug Bounty program.
+            - 
+                title: Oracle On-Line Presence Security Contributors (Oct, 2020)
+                content: Acknowledged in the Oracle Critical Patch Update Advisory, of October 2020, for contributing to their On-Line Presence Security program.
+                url: https://www.oracle.com/security-alerts/cpuoct2020.html
+
+    # projects
+    projects:
+        enable: false
+        # title: "Custom Name"
+        items:
+            - 
+                title: Hugo Profile
+                content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+                image: /images/projects/profile.png
+                featured:
+                    name: Demo
+                    link: https://hugo-profile.netlify.app
+                badges:
+                    - "Hugo"
+                    - "Bootstrap"
+                    - "Javascript"
+                links:
+                    - 
+                        icon: fa fa-envelope
+                        url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+                    - 
+                        icon: fab fa-github
+                        url: https://github.com/gurusabarish/hugo-profile
+                    - 
+                        icon: fab fa-twitter
+                        url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+            - 
+                title: Image Converter
+                content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+                image: /images/projects/converter.jpg
+                featured:
+                    name: Demo
+                    link: https://django-converter.herokuapp.com
+                badges:
+                    - "Django"
+                    - "Bootstrap"
+                links:
+                    -
+                        icon: fab fa-github
+                        url: https://github.com/gurusabarish/converter
+
+            - 
+                title: Hugo Profile V2
+                content: A clean and simple Hugo template for personal portfolio and blog.
+                image: /images/projects/profile2.jpg
+                featured:
+                    name: Demo V2
+                    link: https://hugo-profile-2.netlify.app
+                badges:
+                    - "Hugo"
+                    - "Bootstrap"
+                    - "Javascript"
+                links:
+                    -
+                        icon: fab fa-github
+                        url: https://github.com/gurusabarish/HugoProfileV2
+
+    #Contact
+    contact:
+        enable: false
+        # title: "Custom Name"
+        content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        email: gurusabarisha@gmail.com
+        btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+    footer:
+        recentPosts:
+            path: "blogs"
+            count: 3
+            title: Recent Posts
+            enable: true
+            disableFeaturedImage: false
+        socialNetworks:
+            github: https://github.com/enenumxela
+            linkedin: https://linkedin.com/in/enenumxela
+            twitter: https://twitter.com/enenumxela
+            instagram: https://instagram.com/enenumxela
+            # facebook: https://facebook.com
+
+    # List pages like blogs and posts
+    listPages:
+        disableFeaturedImage: false
+
+    # Single pages like blog and post
+    singlePages:
+        readTime:
+            enable: true
+            content: "min read"
+        scrollprogress:
+            enable: true
+
+    # For translations
+    terms:
+        read: "Read"
+        toc: "Table Of Contents"
+        copyright: "All rights reserved"
+        pageNotFound: "Page not found"
+        emailText: "Check out this site"
+
+    datesFormat:
+        article: "Jan 2, 2006"
+        articleList: "Jan 2, 2006"
+        articleRecent: "Jan 2, 2006"
